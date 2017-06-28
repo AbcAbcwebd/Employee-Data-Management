@@ -136,6 +136,16 @@ clearBtn
 		</div>
 	</div>
 
+<script>
+	function sendToDatabase()
+	firebase.database().ref().push({
+			name: employeeName,
+			role: role,
+			startDate: startDate,
+			monthRate: monthlyRate
+	});
+	};
+</script>
 
 
 </body>

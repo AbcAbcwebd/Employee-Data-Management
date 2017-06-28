@@ -1,11 +1,17 @@
+// Variables. They are global because index.html needs to access them. 
+var employeeName;
+var role;
+var startDate;
+var monthlyRate;
+
 // This function captures what the user typed on the form and saves it to the database.
 // It should be a seperate function outside of a click event so that it can be called both for the click event and for a keydown event on 'ENTER'
 function captureInput(){
 	// These should be set equal to jQuery selectors that capture necesary data.
-	var employeeName = $('#employeeAdd').val();
-	var role = $('#role').val();
-	var startDate = $('#startDate').val();
-	var monthlyRate = $('#monthlyRate').val();
+	employeeName = $('#employeeAdd').val();
+	role = $('#role').val();
+	startDate = $('#startDate').val();
+	monthlyRate = $('#monthlyRate').val();
 
 	// Info needs to be saved to Firebase
 };
