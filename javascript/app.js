@@ -1,8 +1,8 @@
 // Variables. They are global because index.html needs to access them. 
-var employeeName = "Bob";
-var role = "Pimp";
-var startDate = "1902";
-var monthlyRate = "$10,000";
+var employeeName;
+var role;
+var startDate;
+var monthlyRate;
 
 // This function captures what the user typed on the form and saves it to the database.
 // It should be a seperate function outside of a click event so that it can be called both for the click event and for a keydown event on 'ENTER'
