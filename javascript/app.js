@@ -13,13 +13,3 @@ function captureInput(){
 	startDate = $("#startDate").val().trim();
 	monthlyRate = $("#monthlyRate").val().trim();
 };
-
-$('document').ready(function(){
-	/* This doesn't work yet. Click area needs to be changed to a form identifyer, but the end thing will look something like this. 
-	$('CLICK AREA').keyup(function(event){
-    	if(event.keyCode == 13){
-    		console.log("Enter pressed");
-        };
-    };
-    */
-});
