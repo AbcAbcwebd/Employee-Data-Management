@@ -5,13 +5,14 @@
 	</script>
 	<script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	</script>
-    <script src="assets/javascript/app.js">
+    <script Xsrc="assets/javascript/app.js">
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link Xhref="assets/css/reset.css" rel="stylesheet" type="text/css">
 	<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link Xhref="assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- ATTENTION: Links to JS and CSS files disabled because they were throwing an error on my computer. Need to be readded -->
 
 
 	<title>Emplyee Directory</title>
@@ -137,14 +138,12 @@ clearBtn
 	</div>
 
 <script>
-	// This works, but needs to be changed to push, and needs to take variables from form. 
-	// Still working but just wanted to push up progress.
 	function initChallenge(){
-			firebase.database().ref().set({
-				name: "Elvis",
-				role: "Pimp",
-				startDate: "1902"
-				monthlyRate: "$10,000"
+			firebase.database().ref().push({
+				name: employeeName,
+				role: role,
+				startDate: startDate,
+				monthlyRate: monthlyRate
 			});
 	};
 </script>
