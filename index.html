@@ -1,0 +1,128 @@
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+    <script src="assets/javascript/app.js">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+
+	<title>Emplyee Directory</title>
+</head>
+
+<! ids
+
+employeeNameCol
+roleCol
+startDateCol
+monthsWorkedCol
+monthlyRateCol
+totalBilledCol
+
+employeeAdd
+role
+startDate
+monthlyRate
+
+addBtn
+clearBtn
+
+>
+
+<body>
+	<header>
+		<div class="jumbotron text-center">
+			<h1>Emplyee Directory</h1>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<h3 class="panel-title">Current Emplyees</h3>
+				</div>
+
+
+				<div class="panel-body" id="employees">
+
+                    <div class="row">
+
+                        <div class="col-sm-2 col-md-2 col-lg-2" id="employeeNameCol">
+                        </div>
+
+                        <div class="col-sm-2 col-md-2 col-lg-2" id="roleCol">
+                        </div>
+
+                        <div class="col-sm-2 col-md-2 col-lg-2" id="startDateCol">
+                        </div>
+
+                        <div class="col-sm-2 col-md-2 col-lg-2" id="monthsWorkedCol">
+                        </div>
+
+                        <div class="col-sm-2 col-md-2 col-lg-2" id="monthlyRateCol">
+                        </div>
+
+                        <div class="col-sm-2 col-md-2 col-lg-2" id="totalBilledCol">
+                        </div>
+
+                    </div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="search-box">
+		<div class="row">
+			<form class="form-horizontal">
+				<fieldset>
+					<legend>Add Employee</legend>
+
+					<div class="form-group">
+						<label class="col-lg-2 control-label" for="employeeAdd">Employee Name</label>
+
+						<div class="col-lg-10">
+							<input class="form-control" id="employeeAdd" placeholder="John Doe" type="text">
+						</div>
+
+                        <label class="col-lg-2 control-label" for="role">Role</label>
+						
+						<div class="col-lg-10">
+							<input class="form-control" id="role" placeholder="" type="text">
+						</div>
+						
+                        <label class="col-lg-2 control-label" for="startDate">Start Date (DD/MM/YYYY)</label>
+
+						<div class="col-lg-10">
+							<input class="form-control" id="startDate" placeholder="19/04/1998" type="text">
+						</div>
+
+                        <label class="col-lg-2 control-label" for="monthlyRate">Monthly Rate</label>
+
+                        <div class="col-lg-10">
+							<input class="form-control" id="monthlyRate" placeholder="1000" type="text">
+						</div>
+
+
+						<div class="col-lg-10 col-lg-offset-2">
+							<button class="btn btn-default" id="addBtn" type="submit">Add Employee</button> 
+                            <button class="btn btn-primary" id="clearBtn" type="reset">Clear Employees</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
