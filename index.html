@@ -8,10 +8,11 @@
     <script src="javascript/app.js">
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- ATTENTION: Links to JS and CSS files disabled because they were throwing an error on my computer. Need to be readded -->
 
 
 	<title>Emplyee Directory</title>
@@ -136,6 +137,16 @@ clearBtn
 		</div>
 	</div>
 
+<script>
+	function initChallenge(){
+			firebase.database().ref().push({
+				name: employeeName,
+				role: role,
+				startDate: startDate,
+				monthlyRate: monthlyRate
+			});
+	};
+</script>
 
 
 </body>
