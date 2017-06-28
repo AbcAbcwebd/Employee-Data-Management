@@ -137,13 +137,15 @@ clearBtn
 	</div>
 
 <script>
-	function sendToDatabase()
-	firebase.database().ref().push({
-			name: employeeName,
-			role: role,
-			startDate: startDate,
-			monthRate: monthlyRate
-	});
+	// This works, but needs to be changed to push, and needs to take variables from form. 
+	// Still working but just wanted to push up progress.
+	function initChallenge(){
+			firebase.database().ref().set({
+				name: "Elvis",
+				role: "Pimp",
+				startDate: "1902"
+				monthlyRate: "$10,000"
+			});
 	};
 </script>
 
