@@ -12,8 +12,7 @@
 	<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <!-- ATTENTION: Links to JS and CSS files disabled because they were throwing an error on my computer. Need to be readded -->
-
+ 
 
 	<title>Emplyee Directory</title>
 </head>
@@ -141,9 +140,9 @@ clearBtn
 	function initChallenge(){
 			firebase.database().ref().push({
 				name: employeeName,
-				role: role,
-				startDate: startDate,
-				monthlyRate: monthlyRate
+				employeeRole: role,
+				employeeStartDate: startDate,
+				employeeMonthlyRate: monthlyRate
 			});
 	};
 
@@ -156,8 +155,10 @@ clearBtn
 	    };
 	    */
 
-	    $("#set-name-button").on("click", function() {
-
+	    $("#addBtn").on("click", function() {
+	    	event.preventDefault();
+	    	captureInput();
+	    	initChallenge();
 	    });
 	});
 </script>
