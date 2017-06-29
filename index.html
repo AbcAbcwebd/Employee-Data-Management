@@ -162,13 +162,16 @@ clearBtn
 	    });
 	});
 
+	var arrayOfKeys = [];
+
 	firebase.database().ref().on("value", function(snapshot){
-		console.log(snapshot.val());
-		for (var key in activeUsersObj) {
-			if (activeUsersObj.hasOwnProperty(key)) {
-			   console.log(key);
+		var employeeObj = snapshot.val()
+		arrayOfKeys = [];
+		for (var key in employeeObj) {
+			if (employeeObj.hasOwnProperty(key)) {
+			   arrayOfKeys.push(key);
 			}
-		}
+		} 
 	}, function(error){
 		console.log(error);
 	});
