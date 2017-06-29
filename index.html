@@ -161,6 +161,17 @@ clearBtn
 	    	initChallenge();
 	    });
 	});
+
+	firebase.database().ref().on("value", function(snapshot){
+		console.log(snapshot.val());
+		for (var key in activeUsersObj) {
+			if (activeUsersObj.hasOwnProperty(key)) {
+			   console.log(key);
+			}
+		}
+	}, function(error){
+		console.log(error);
+	});
 </script>
 
 
